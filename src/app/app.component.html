@@ -12,6 +12,16 @@
   Son componentes que manipulan la informacion (o el estado de la data)
   - Tienen informacion propia
 -->
+
+<button #btnModal (click)="abrirModal()" class="btn btn-primary">
+  Abrir modal
+</button>
+
+<app-my-modal [(visible)]="modalVisible"></app-my-modal>
+<P>appComponentModal: {{ modalVisible | json }}</P>
+
+<br /><br />
+
 <h4 class="mb-3">Empleados en vacaciones:</h4>
 <app-employee-list
   (selectEmployee)="eliminarEmpleado($event)"

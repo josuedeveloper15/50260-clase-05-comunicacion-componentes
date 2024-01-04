@@ -1,0 +1,17 @@
+<p>myModalVisible: {{ visible | json }}</p>
+<div *ngIf="visible" class="modal-background">
+  <div class="card w-50">
+    <div class="card-body">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore
+      animi ad quam, consequatur numquam ea ipsam expedita deserunt beatae natus
+      repudiandae sunt blanditiis accusantium nihil architecto in! Voluptates,
+      esse?
+
+      <div>
+        <button (click)="cerrarModal()" class="btn btn-secondary">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
